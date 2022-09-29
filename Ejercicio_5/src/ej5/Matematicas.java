@@ -21,25 +21,46 @@ public class Matematicas implements MinMax {
 
 	@Override
 	public int min(int[] a) {
-		
+		int m = a[0];
+		for (int i = 0; i < a.length; i++) {
+			if (a[i] < m) {
+				m = a[i];
+			}
+		}
+		return m;
 	}
 
 	@Override
 	public int max(int[] a) {
-		// TODO Auto-generated method stub
-		return 0;
+		int m = a[0];
+		for (int i = 0; i < a.length; i++) {
+			if (a[i] > m) {
+				m = a[i];
+			}
+		}
+		return m;
 	}
 
 	@Override
 	public double min(double[] a) {
-		// TODO Auto-generated method stub
-		return 0;
+		double m = a[0];
+		for (int i = 0; i < a.length; i++) {
+			if (a[i] < m) {
+				m = a[i];
+			}
+		}
+		return m;
 	}
 
 	@Override
 	public double max(double[] a) {
-		// TODO Auto-generated method stub
-		return 0;
+		double m = a[0];
+		for (int i = 0; i < a.length; i++) {
+			if (a[i] > m) {
+				m = a[i];
+			}
+		}
+		return m;
 	}
 
 }
