@@ -1,5 +1,9 @@
 package ej8;
 
-public class Partido {
+import java.util.SortedSet;
 
+public class Partido {
+SortedSet Betis;
+	
+	
 }

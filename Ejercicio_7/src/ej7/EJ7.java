@@ -17,7 +17,6 @@ import java.util.Scanner;
 //¿Quiere escudo? (s/n): __
 //Localidad de envío: __________
 
-
 //Desglose de la factura:
 //Bandera XXX cm2 = ___ €
 //Escudo = ___ €
@@ -25,54 +24,57 @@ import java.util.Scanner;
 //Total pedido = _______€
 
 public class EJ7 {
-static Scanner sc = new Scanner(System.in);
-static double an = 0;
-static double alt = 0;
-static char escudo = ' ' ;
-static String localidad = "";
-public static void main(String[] args) {
-	System.out.println("Introducir el ancho de la bandera (en cm)");
-	
-	try{an = sc.nextDouble();}
-	catch (Exception e) {
-		
-		
-	}
-	
-	System.out.println("Introducir el alto de la bandera (en cm)");
-	
-	alt = sc.nextDouble();
-	
-	System.out.println("Quiere escudo? (s/n)");
-	
-	escudo = sc.next().charAt(0);
-	
-	System.out.println("Localidad de envio");
-	
-	localidad = sc.next().toLowerCase();
-	
-	factura();
-	
-}
+	static Scanner sc = new Scanner(System.in);
+	static double an = 0;
+	static double alt = 0;
+	static char escudo = ' ';
+	static String localidad = "";
+	static boolean a = false;
 
-public static void factura() {
-	double cm2 = an * alt;
-	double pescudo = 0;
-	double plocalidad = 0;
-	double total = 0;
-	if (escudo == 's') {
-		pescudo = 3.75;
+	public static void main(String[] args) {
+
+		try {
+			System.out.println("Introducir el ancho de la bandera (en cm)");
+
+			an = sc.nextDouble();
+			
+			System.out.println("Introducir el alto de la bandera (en cm)");
+
+			alt = sc.nextDouble();
+
+			System.out.println("Quiere escudo? (s/n)");
+
+			escudo = sc.next().charAt(0);
+
+			System.out.println("Localidad de envio");
+
+			localidad = sc.next().toLowerCase();
+			a = true;
+		} catch (Exception e) {
+			System.out.println("error");
+		}
+
+		System.out.println(localidad);
+		factura();
+
 	}
-	
-	if (localidad != "sevilla") {
-		plocalidad = 4.25;
+
+	public static void factura() {
+		double cm2 = an * alt;
+		double pescudo = 0;
+		double plocalidad = 4.25;
+		if (escudo == 's') {
+			pescudo = 3.75;
+		}
+
+		if (localidad.equals("sevilla")) {
+			plocalidad = 0;
+		}
+		System.out.println("Desglose de la factura: ");
+		System.out.println("Bandera " + cm2 + " cm2 = " + (cm2 * 0.01) + " € ");
+		System.out.println("Escudo = " + pescudo + " € ");
+		System.out.println("Gastos de envio = " + plocalidad + " € ");
+		System.out.println("Total pedido = " + ((cm2 * 0.01) + pescudo + plocalidad) + " € ");
+
 	}
-	System.out.println("Desglose de la factura: ");
-	System.out.println("Bandera " + cm2 + " cm2 = " + (cm2*0.01) + " € ");
-	System.out.println("Escudo = " + pescudo);
-	System.out.println("Gastos de envio =" + plocalidad );
-	System.out.println("Total pedido = " + ((cm2*0.01)+ pescudo + plocalidad));
-	
-	
-}
 }
