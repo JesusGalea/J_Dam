@@ -13,7 +13,7 @@ public class Estadistica {
 	while (a.it1.hasNext()) {
 		Jugador ju = (Jugador)a.it1.next();
 		if(ju.getPosicion().toLowerCase().equals("delantero")) {
-			
+			ju.setMVP( ju.getGoles()* 31 + ju.getPases() * 1 + ju.getRecuperaciones() * 3 - ju.getTRojas()*2);
 		}
 	}
 	}

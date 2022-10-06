@@ -66,6 +66,14 @@ public int getParadas() {
 public void setParadas(int paradas) {
 	Paradas = paradas;
 }
+public double getMVP() {
+	return MVP;
+}
+public void setMVP(double mVP) {
+	MVP = mVP;
+}
+
+
 
 
 
