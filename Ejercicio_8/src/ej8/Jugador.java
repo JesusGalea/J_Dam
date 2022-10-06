@@ -1,6 +1,6 @@
 package ej8;
 
-public class Jugador {
+public class Jugador extends Equipo {
 String nombre;
 String posicion;
 int goles;
@@ -8,13 +8,20 @@ int pases;
 int recuperaciones;
 int TRojas;
 int Paradas;
+double MVP;
 
 public Jugador() {
 	
 }
-public Jugador (String n, String p) {
+public Jugador (String n, String p, int g, int pas, int rec, int Tr, int par) {
 	nombre = n;
 	posicion = p;
+	goles = g;
+	pases = pas;
+	recuperaciones = rec;
+	TRojas = Tr;
+	Paradas = par;
+	MVP = 0;
 	
 }
 public String getNombre() {

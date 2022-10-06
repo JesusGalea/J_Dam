@@ -13,8 +13,9 @@ public class Main {
 		carro.añadir(lechuga);
 		carro.añadir(zumo);
 		carro.añadir(papitas);
+		
 
-		System.out.println("precio total: " + carro.Calcular_Compra(null));
+		System.out.println("precio total: " + carro.Calcular_Compra());
 
 	}
 
