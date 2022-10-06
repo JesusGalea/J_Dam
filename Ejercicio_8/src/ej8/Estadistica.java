@@ -14,6 +14,10 @@ public class Estadistica {
 		Jugador ju = (Jugador)a.it1.next();
 		if(ju.getPosicion().toLowerCase().equals("delantero")) {
 			ju.setMVP( ju.getGoles()* 31 + ju.getPases() * 1 + ju.getRecuperaciones() * 3 - ju.getTRojas()*2);
+		} else if (ju.getPosicion().toLowerCase().equals("defensa")){
+			ju.setMVP(ju.getGoles()* 21 + ju.getPases()*1 + ju.getRecuperaciones()*4 - ju.getTRojas());
+		} else {
+			ju.setMVP(ju.getGoles()* 60 + ju.getParadas() * 5 - ju.getTRojas() * 2);
 		}
 	}
 	}
