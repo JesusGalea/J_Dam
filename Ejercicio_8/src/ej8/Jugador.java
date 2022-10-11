@@ -1,6 +1,6 @@
 package ej8;
 
-public class Jugador extends Equipo {
+public class Jugador extends Equipo  {
 String nombre;
 String posicion;
 int goles;
@@ -74,7 +74,10 @@ public void setMVP(double mVP) {
 }
 
 
-
-
-
 }
+
+
+
+
+
+
