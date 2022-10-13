@@ -3,11 +3,11 @@ package ej8;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.List;
 
 public class Equipo {
 String Nombre_Equipo ;
-Collection equ = new ArrayList();
-Iterator it1 = equ.iterator();
+List<Jugador> equ = new ArrayList<Jugador>();
 public Equipo() {
 	
 }
@@ -17,9 +17,9 @@ public Equipo(String a) {
 }
 
 public void Añadir(Jugador a) {
-	if (equ.contains(a)== false) {
+	
 	equ.add(a);
-	}
+
 }
 
 public String getNombre_Equipo() {
