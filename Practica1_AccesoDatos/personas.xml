@@ -1,2 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<personas />
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<personas>
+  <persona>
+    <nombre>nombrePrueba</nombre>
+    <apellido>apellidoPrueba</apellido>
+    <edad>69</edad>
+    <altura>1.98</altura>
+    <foto>foto</foto>
+  </persona>
+  <persona>
+    <nombre>Pepe</nombre>
+    <apellido>Viyuela</apellido>
+    <edad>52</edad>
+    <altura>1.6</altura>
+    <foto>https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2017/10/16/15081525278135.jpg</foto>
+  </persona>
+  <persona>
+    <nombre>Juan</nombre>
+    <apellido>Garcia</apellido>
+    <edad>28</edad>
+    <altura>1.83</altura>
+    <foto>https://lh3.googleusercontent.com/-0Wa7kboTHnc/YC_p1ZxRlaI/AAAAAAAAPuw/fqtjhATtShYHClCq0l-8SpVIwYikK_UyQCLcBGAsYHQ/image.png</foto>
+  </persona>
+  <persona>
+    <nombre>Sergio</nombre>
+    <apellido>García</apellido>
+    <edad>38</edad>
+    <altura>1.6</altura>
+    <foto>https://preview.redd.it/7cfls5gkv1871.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=6ece7791a218eae5f8e3174bb45a156b5b74fe02</foto>
+  </persona>
+</personas>
