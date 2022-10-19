@@ -12,6 +12,7 @@ public class Main {
 		System.out.println("introduce la nota deseada");
 		Double nota = sc.nextDouble();
 		
+		//ex2 = nota - (ex1*0.4);
 		
 		
 
